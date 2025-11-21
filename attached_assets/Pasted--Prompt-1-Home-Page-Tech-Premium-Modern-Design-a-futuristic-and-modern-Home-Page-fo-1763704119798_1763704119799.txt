@@ -1,0 +1,75 @@
+🌐 Prompt 1: Home Page (Tech + Premium + Modern)**
+
+**“Design a futuristic and modern Home Page for a full-stack IT solutions company offering Website Development, App Development, Software Development, Graphic Designing, Social Media Marketing, and Cyber Security.
+
+Include:
+
+* Bold hero section with headline, subheadline, futuristic 3D illustration, and CTA buttons
+* Clean service overview cards with tech icons
+* About snippet section with mission + achievements
+* Why Choose Us section with stats
+* Portfolio preview grid
+* Testimonials slider
+* Modern footer with quick links & contact info
+
+Visual Style:
+Glassmorphism, neon strokes, electric blue accents, premium tech feel (like Vercel, Stripe, Apple). Create both desktop and mobile versions.”**
+
+---
+
+# **📄 Prompt 2: Services Page**
+
+**“Design a modern Services page for a digital IT agency.
+
+Include:
+
+* Hero banner with clean headline and subtle tech background
+* Six dedicated service blocks:
+
+  1. Website Design & Development
+  2. App Design & Development
+  3. Software Development
+  4. Graphic Designing
+  5. Social Media Marketing
+  6. Cyber Security Solutions
+* Each block must include an icon, description, and CTA
+* Use a grid layout with futuristic shapes
+* Add subtle animations, gradients, and glowing borders
+
+Visual Style: Dark tech theme with neon blue & white contrast.”**
+
+---
+
+# **🏢 Prompt 3: About Us Page**
+
+**“Create a professional About Us page for a modern IT company.
+
+Include:
+
+* Hero section with team-focused illustration
+* Company mission, vision, and values
+* Timeline of company growth
+* Team member grid with profile cards
+* What Makes Us Different section with futuristic badges
+* Client logos section
+* Clean footer
+
+Visual Style: Minimal, premium, clean layout with soft gradients and high-tech accents.”**
+
+---
+
+# **📞 Prompt 4: Contact Page**
+
+**“Design a sleek and modern Contact Page for an IT agency.
+
+Include:
+
+* Contact hero section
+* Contact form (Name, Email, Phone, Message)
+* Company location map
+* Quick contact info: email, phone, WhatsApp, office hours
+* FAQ accordion section
+* Trust badges or certificates
+
+Visual Style: Clean white + electric blue accents, rounded cards, soft shadows, professional and trustworthy.”**
+
