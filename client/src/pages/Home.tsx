@@ -144,13 +144,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Image */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-cyan-400/30 blur-3xl rounded-full" />
+            {/* Right Image - 3D Animated */}
+            <div className="relative animate-float-3d">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-cyan-400/30 blur-3xl rounded-full animate-pulse-3d" />
               <img 
                 src={heroImage} 
                 alt="Futuristic technology illustration" 
-                className="relative z-10 w-full h-auto rounded-2xl"
+                className="relative z-10 w-full h-auto rounded-2xl shadow-2xl animate-glow-pulse"
                 data-testid="img-hero"
               />
             </div>
@@ -176,11 +176,11 @@ export default function Home() {
               return (
                 <GlassCard 
                   key={service.id} 
-                  className="p-8 group hover-elevate active-elevate-2 transition-all duration-300"
+                  className="p-8 group hover-elevate active-elevate-2 transition-all duration-300 card-3d-hover"
                   data-testid={`card-service-${index}`}
                 >
-                  <div className="mb-6 w-16 h-16 rounded-xl bg-gradient-to-br from-primary to-cyan-500 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    {Icon && <Icon className="w-8 h-8 text-white" />}
+                  <div className="mb-6 w-16 h-16 rounded-xl bg-gradient-to-br from-primary to-cyan-500 flex items-center justify-center group-hover:scale-110 transition-transform animate-pulse-3d">
+                    {Icon && <Icon className="w-8 h-8 text-white animate-rotate-3d" />}
                   </div>
                   <h3 className="text-xl font-display font-semibold text-white mb-3" data-testid={`text-service-title-${index}`}>
                     {service.title}
@@ -276,8 +276,8 @@ export default function Home() {
               { icon: Target, title: "On-Time Delivery", desc: "We respect deadlines and deliver on time" },
               { icon: Award, title: "Award Winning", desc: "Recognized excellence in digital solutions" }
             ].map((item, index) => (
-              <GlassCard key={index} className="p-8 text-center hover-elevate active-elevate-2 transition-all" data-testid={`card-benefit-${index}`}>
-                <item.icon className="w-12 h-12 text-primary mx-auto mb-4" />
+              <GlassCard key={index} className="p-8 text-center hover-elevate active-elevate-2 transition-all card-3d-hover" data-testid={`card-benefit-${index}`}>
+                <item.icon className="w-12 h-12 text-primary mx-auto mb-4 animate-pulse-3d" />
                 <h3 className="text-lg font-display font-semibold text-white mb-2">{item.title}</h3>
                 <p className="text-slate-400">{item.desc}</p>
               </GlassCard>
@@ -302,7 +302,7 @@ export default function Home() {
             {portfolioItems.slice(0, 6).map((item, index) => (
               <Card 
                 key={item.id} 
-                className="group overflow-hidden bg-slate-900/50 border-white/10 hover-elevate active-elevate-2 transition-all"
+                className="group overflow-hidden bg-slate-900/50 border-white/10 hover-elevate active-elevate-2 transition-all card-3d-hover"
                 data-testid={`card-portfolio-${index}`}
               >
                 <div className="relative overflow-hidden aspect-video">
@@ -339,7 +339,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.slice(0, 3).map((testimonial, index) => (
-              <GlassCard key={testimonial.id} className="p-8 hover-elevate active-elevate-2 transition-all" data-testid={`card-testimonial-${index}`}>
+              <GlassCard key={testimonial.id} className="p-8 hover-elevate active-elevate-2 transition-all card-3d-hover" data-testid={`card-testimonial-${index}`}>
                 <div className="flex items-center gap-4 mb-6">
                   <img 
                     src={testimonial.imageUrl} 

@@ -195,7 +195,93 @@
  * Even without handling focused or not, this is six possible combinations that
  * need to be distinguished from eachother visually.
  */
+@keyframes float-3d {
+  0%, 100% {
+    transform: translateY(-20px) rotateX(5deg) rotateZ(2deg);
+  }
+  50% {
+    transform: translateY(20px) rotateX(-5deg) rotateZ(-2deg);
+  }
+}
+
+@keyframes rotate-3d {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+  }
+}
+
+@keyframes pulse-3d {
+  0%, 100% {
+    transform: scale(1) rotateY(0deg);
+  }
+  50% {
+    transform: scale(1.05) rotateY(10deg);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.3), 0 0 40px rgba(34, 211, 238, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(14, 165, 233, 0.6), 0 0 80px rgba(34, 211, 238, 0.3);
+  }
+}
+
+@keyframes shimmer-3d {
+  0% {
+    background-position: -1000px 0;
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    background-position: 1000px 0;
+    transform: perspective(1000px) rotateY(5deg);
+  }
+}
+
 @layer utilities {
+
+  /* 3D Animation Classes */
+  .animate-float-3d {
+    animation: float-3d 6s ease-in-out infinite;
+    perspective: 1000px;
+  }
+
+  .animate-rotate-3d {
+    animation: rotate-3d 8s linear infinite;
+    perspective: 1000px;
+  }
+
+  .animate-pulse-3d {
+    animation: pulse-3d 4s ease-in-out infinite;
+    perspective: 1000px;
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 3s ease-in-out infinite;
+  }
+
+  .animate-shimmer-3d {
+    animation: shimmer-3d 8s linear infinite;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  }
+
+  .card-3d-hover {
+    perspective: 1000px;
+    transition: transform 0.3s ease-out;
+  }
+
+  .card-3d-hover:hover {
+    transform: rotateX(5deg) rotateY(-5deg) translateZ(20px);
+  }
+
+  .hero-3d {
+    perspective: 1200px;
+    transform-style: preserve-3d;
+  }
 
   /* Hide ugly search cancel button in Chrome until we can style it properly */
   input[type="search"]::-webkit-search-cancel-button {
