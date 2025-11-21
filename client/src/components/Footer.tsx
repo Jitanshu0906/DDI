@@ -75,6 +75,21 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/pricing" className="text-muted-foreground hover:text-white transition-colors" data-testid="link-footer-pricing">
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <Link href="/case-studies" className="text-muted-foreground hover:text-white transition-colors" data-testid="link-footer-casestudies">
+                  Case Studies
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="text-muted-foreground hover:text-white transition-colors" data-testid="link-footer-blog">
+                  Blog
+                </Link>
+              </li>
+              <li>
                 <Link href="/about" className="text-muted-foreground hover:text-white transition-colors" data-testid="link-footer-about">
                   About Us
                 </Link>
