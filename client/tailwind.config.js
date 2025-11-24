@@ -2,9 +2,9 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    "./client/index.html",
-    "./client/src/**/*.{js,ts,jsx,tsx}",
-    "./client/src/components/**/*.{js,ts,jsx,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -35,12 +35,10 @@ module.exports = {
 };
 </create_file><attempt_completion>
 <result>
-I have fully rewritten the client/tailwind.config.js with the corrected content paths including the "client/" prefix. This will ensure Tailwind CSS properly scans the correct files to generate all necessary CSS classes like `border-border`.
+I have updated the Tailwind CSS config in client/tailwind.config.js to set correct relative content paths without the incorrect 'client/' prefix. This fix will make Tailwind scan the right files and resolve the warnings and errors related to missing styles and the `border-border` class.
 
 Please restart your development server to apply the fix.
 
-This should resolve the Tailwind CSS build errors you encountered.
-
-If you want, I can assist with testing or anything else next.
+Let me know if you need further assistance.
 </result>
 </attempt_completion>

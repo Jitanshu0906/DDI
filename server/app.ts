@@ -73,8 +73,9 @@ export default async function runApp(
     const status = err.status || err.statusCode || 500;
     const message = err.message || "Internal Server Error";
 
+    console.error("Error handled:", err);
     res.status(status).json({ message });
-    throw err;
+    // Removed throw err; to avoid unhandled exceptions after sending response
   });
 
   // importantly run the final setup after setting up all the other routes so
