@@ -1,8 +1,8 @@
-# TechSolutions - Premium IT Solutions Website
+# Digital Dreams IT - Premium IT Solutions Website
 
 ## Overview
 
-TechSolutions is a modern, full-stack web application for showcasing IT services and solutions. The application features a premium, futuristic design aesthetic with glassmorphism effects, built using React (Vite) for the frontend and Express.js for the backend. The site includes pages for services, portfolio, about, and contact forms, all designed with a focus on creating a high-end tech brand presence similar to companies like Vercel, Stripe, and Apple.
+Digital Dreams IT is a modern, full-stack web application for showcasing IT services and solutions. The application features a premium, futuristic design aesthetic with glassmorphism effects, built using React (Vite) for the frontend and Express.js for the backend. The site includes pages for services, portfolio, about, and contact forms, all designed with a focus on creating a high-end tech brand presence similar to companies like Vercel, Stripe, and Apple.
 
 ## User Preferences
 

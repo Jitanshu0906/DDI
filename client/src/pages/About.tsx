@@ -38,7 +38,7 @@ export default function About() {
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-display font-extrabold mb-6 leading-tight" data-testid="text-about-hero-heading">
                 About
                 <span className="block bg-gradient-to-r from-primary via-cyan-400 to-primary bg-clip-text text-transparent">
-                  TechSolutions
+                  Digital Dreams IT
                 </span>
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed mb-8">

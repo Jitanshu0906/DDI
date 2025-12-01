@@ -1,6 +1,5 @@
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -24,7 +23,7 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/">
             <span className="text-2xl font-display font-bold bg-gradient-to-r from-primary to-cyan-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity cursor-pointer" data-testid="link-logo">
-              TechSolutions
+              Digital Dreams IT
             </span>
           </Link>
 
@@ -44,7 +43,6 @@ export function Navigation() {
                 </span>
               </Link>
             ))}
-            <ThemeToggle />
             <Link href="/contact">
               <Button className="font-semibold" data-testid="button-nav-cta">
                 Get Started

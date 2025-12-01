@@ -224,8 +224,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-white mb-1">Email</h4>
-                      <a href="mailto:info@techsolutions.com" className="text-slate-400 hover:text-primary transition-colors" data-testid="link-contact-email">
-                        info@techsolutions.com
+                      <a href="mailto:contact@digitaldreamsit.in" className="text-slate-400 hover:text-primary transition-colors" data-testid="link-contact-email">
+                        contact@digitaldreamsit.in
                       </a>
                     </div>
                   </div>
@@ -236,8 +236,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-white mb-1">Phone</h4>
-                      <a href="tel:+1234567890" className="text-slate-400 hover:text-primary transition-colors" data-testid="link-contact-phone">
-                        +1 (234) 567-890
+                      <a href="tel:+916355816866" className="text-slate-400 hover:text-primary transition-colors" data-testid="link-contact-phone">
+                        +91 6355 816 866
                       </a>
                     </div>
                   </div>
@@ -301,26 +301,7 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-12 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <GlassCard className="overflow-hidden" data-testid="card-map">
-            <div className="aspect-video">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.6395883087866!2d-122.08624908469174!3d37.38605197982991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7495bec0189%3A0x7c17d44a466baf9b!2sSilicon%20Valley!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Office Location"
-                data-testid="iframe-map"
-              />
-            </div>
-          </GlassCard>
-        </div>
-      </section>
+
 
       {/* FAQ Section */}
       <section className="py-24 relative">

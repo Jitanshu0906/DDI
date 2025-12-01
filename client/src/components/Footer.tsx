@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone } from "lucide-react";
 
 export function Footer() {
   return (
@@ -11,7 +11,7 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-display font-bold mb-4 bg-gradient-to-r from-primary to-cyan-400 bg-clip-text text-transparent" data-testid="text-footer-brand">
-              TechSolutions
+              Digital Dreams IT
             </h3>
             <p className="text-muted-foreground mb-4">
               Transforming ideas into exceptional digital experiences with cutting-edge technology and creative excellence.
@@ -121,19 +121,15 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-muted-foreground">
                 <Mail className="w-5 h-5 mt-0.5 text-primary flex-shrink-0" />
-                <a href="mailto:info@techsolutions.com" className="hover:text-white transition-colors" data-testid="link-email">
-                  info@techsolutions.com
+                <a href="mailto:contact@digitaldreamsit.in" className="hover:text-white transition-colors" data-testid="link-email">
+                  contact@digitaldreamsit.in
                 </a>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground">
                 <Phone className="w-5 h-5 mt-0.5 text-primary flex-shrink-0" />
-                <a href="tel:+1234567890" className="hover:text-white transition-colors" data-testid="link-phone">
-                  +1 (234) 567-890
+                <a href="tel:+916355816866" className="hover:text-white transition-colors" data-testid="link-phone">
+                  +91 6355 816 866
                 </a>
-              </li>
-              <li className="flex items-start gap-3 text-muted-foreground">
-                <MapPin className="w-5 h-5 mt-0.5 text-primary flex-shrink-0" />
-                <span>123 Tech Street, Silicon Valley, CA 94025</span>
               </li>
             </ul>
           </div>
@@ -141,7 +137,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} TechSolutions. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Digital Dreams IT. All rights reserved.</p>
         </div>
       </div>
     </footer>
