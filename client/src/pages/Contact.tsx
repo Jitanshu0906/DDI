@@ -11,7 +11,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Mail, Phone, MapPin, Clock, Shield, Award, Users } from "lucide-react";
+import { Mail, Phone, Clock, Shield, Award, Users } from "lucide-react";
 import { faqItems } from "@/data/faq";
 import contactHeroImage from "@assets/generated_images/communication_network_visualization.png";
 import { useForm } from "react-hook-form";
@@ -48,7 +48,8 @@ export default function Contact() {
 
   const mutation = useMutation({
     mutationFn: async (data: ContactFormData) => {
-      return apiRequest("POST", "/api/contact", data);
+      // For GitHub Pages deployment, show a message instead of trying to submit
+      throw new Error("Contact form is currently unavailable on this demo. Please use the email or phone number below to reach us directly.");
     },
     onSuccess: () => {
       setIsSubmitted(true);
@@ -58,10 +59,10 @@ export default function Contact() {
         description: "We'll get back to you within 24 hours.",
       });
     },
-    onError: () => {
+    onError: (error) => {
       toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
+        title: "Contact Form Unavailable",
+        description: error.message,
         variant: "destructive"
       });
     }
@@ -76,14 +77,14 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src={contactHeroImage} 
+          <img
+            src={contactHeroImage}
             alt="Communication visualization"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-900/90 to-slate-950" />
         </div>
-        
+
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -119,11 +120,11 @@ export default function Contact() {
                       <FormItem>
                         <FormLabel className="text-white">Name *</FormLabel>
                         <FormControl>
-                          <Input 
-                            placeholder="Your full name" 
+                          <Input
+                            placeholder="Your full name"
                             className="bg-white/5 border-white/10 text-white placeholder:text-slate-500"
                             data-testid="input-name"
-                            {...field} 
+                            {...field}
                           />
                         </FormControl>
                         <FormMessage />
@@ -138,12 +139,12 @@ export default function Contact() {
                       <FormItem>
                         <FormLabel className="text-white">Email *</FormLabel>
                         <FormControl>
-                          <Input 
+                          <Input
                             type="email"
-                            placeholder="your@email.com" 
+                            placeholder="your@email.com"
                             className="bg-white/5 border-white/10 text-white placeholder:text-slate-500"
                             data-testid="input-email"
-                            {...field} 
+                            {...field}
                           />
                         </FormControl>
                         <FormMessage />
@@ -158,12 +159,12 @@ export default function Contact() {
                       <FormItem>
                         <FormLabel className="text-white">Phone (Optional)</FormLabel>
                         <FormControl>
-                          <Input 
+                          <Input
                             type="tel"
-                            placeholder="+1 (234) 567-890" 
+                            placeholder="+1 (234) 567-890"
                             className="bg-white/5 border-white/10 text-white placeholder:text-slate-500"
                             data-testid="input-phone"
-                            {...field} 
+                            {...field}
                           />
                         </FormControl>
                         <FormMessage />
@@ -178,12 +179,12 @@ export default function Contact() {
                       <FormItem>
                         <FormLabel className="text-white">Message *</FormLabel>
                         <FormControl>
-                          <Textarea 
+                          <Textarea
                             placeholder="Tell us about your project..."
                             rows={6}
                             className="bg-white/5 border-white/10 text-white placeholder:text-slate-500 resize-none"
                             data-testid="input-message"
-                            {...field} 
+                            {...field}
                           />
                         </FormControl>
                         <FormMessage />
@@ -191,9 +192,9 @@ export default function Contact() {
                     )}
                   />
 
-                  <Button 
-                    type="submit" 
-                    size="lg" 
+                  <Button
+                    type="submit"
+                    size="lg"
                     className="w-full font-semibold"
                     disabled={mutation.isPending}
                     data-testid="button-submit-contact"
@@ -216,7 +217,7 @@ export default function Contact() {
             <div className="space-y-8">
               <GlassCard className="p-8" data-testid="card-contact-info">
                 <h3 className="text-2xl font-display font-bold text-white mb-6">Contact Information</h3>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
@@ -244,19 +245,6 @@ export default function Contact() {
 
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-white mb-1">Office</h4>
-                      <p className="text-slate-400">
-                        123 Tech Street, Silicon Valley<br />
-                        CA 94025, United States
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
                       <Clock className="w-6 h-6 text-primary" />
                     </div>
                     <div>
@@ -274,7 +262,7 @@ export default function Contact() {
               {/* Trust Badges */}
               <GlassCard className="p-8" data-testid="card-trust-badges">
                 <h3 className="text-2xl font-display font-bold text-white mb-6">Why Trust Us</h3>
-                
+
                 <div className="grid grid-cols-3 gap-4">
                   <div className="text-center">
                     <div className="w-12 h-12 mx-auto mb-3 rounded-lg bg-primary/20 flex items-center justify-center">
