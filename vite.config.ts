@@ -4,6 +4,8 @@ import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
+  // ADD THIS LINE: This ensures your site works at the root of your domain
+  base: "/", 
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -28,6 +30,7 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname, "client"),
   build: {
+    // This is where your production files will be generated
     outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
