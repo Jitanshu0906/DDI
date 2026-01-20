@@ -39,12 +39,19 @@ export function LiveChat() {
     };
   }, []);
 
+  const openChat = () => {
+    if (window.Tawk_API) {
+      window.Tawk_API.maximize();
+    }
+  };
+
   return (
-    <div 
+    <div
       className="fixed bottom-8 right-8 z-40 cursor-pointer"
       data-testid="live-chat-widget"
     >
-      <button 
+      <button
+        onClick={openChat}
         className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-primary to-cyan-500 shadow-lg hover:shadow-xl transition-shadow animate-pulse-3d"
         aria-label="Open live chat"
         data-testid="button-live-chat"
