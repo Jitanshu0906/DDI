@@ -46,30 +46,23 @@ export default function Contact() {
     }
   });
 
-  const mutation = useMutation({
-    mutationFn: async (data: ContactFormData) => {
-      // For GitHub Pages deployment, show a message instead of trying to submit
-      throw new Error("Contact form is currently unavailable on this demo. Please use the email or phone number below to reach us directly.");
-    },
-    onSuccess: () => {
-      setIsSubmitted(true);
-      form.reset();
-      toast({
-        title: "Message Sent Successfully!",
-        description: "We'll get back to you within 24 hours.",
-      });
-    },
-    onError: (error) => {
-      toast({
-        title: "Contact Form Unavailable",
-        description: error.message,
-        variant: "destructive"
-      });
-    }
-  });
-
   const onSubmit = (data: ContactFormData) => {
-    mutation.mutate(data);
+    // Create mailto link with form data
+    const subject = encodeURIComponent("Contact Form Submission from Website");
+    const body = encodeURIComponent(
+      `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || 'Not provided'}\n\nMessage:\n${data.message}`
+    );
+    const mailtoLink = `mailto:contact@digitaldreamsit.in?subject=${subject}&body=${body}`;
+
+    // Open email client
+    window.location.href = mailtoLink;
+
+    setIsSubmitted(true);
+    form.reset();
+    toast({
+      title: "Email Client Opened!",
+      description: "Your email client has been opened with the message. Please send it to complete your inquiry.",
+    });
   };
 
   return (
