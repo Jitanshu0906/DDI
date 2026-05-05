@@ -18,12 +18,12 @@ export default function About() {
   ];
 
   const timeline = [
-    { year: "2010", title: "Company Founded", description: "Started with a vision to transform digital experiences" },
-    { year: "2013", title: "First Major Client", description: "Secured partnership with leading tech company" },
-    { year: "2016", title: "Team Expansion", description: "Grew to 25+ talented professionals" },
-    { year: "2019", title: "Industry Recognition", description: "Won Best IT Solutions Provider award" },
-    { year: "2022", title: "Global Reach", description: "Expanded services to 15+ countries" },
-    { year: "2025", title: "Innovation Leader", description: "Leading the industry with AI-powered solutions" }
+    { year: "2021", title: "Company Founded", description: "Started with a vision to transform digital experiences" },
+    { year: "2022", title: "First Major Client", description: "Secured partnership with leading tech company" },
+    { year: "2023", title: "Team Expansion", description: "Grew to 5+ talented professionals" },
+    { year: "2024", title: "National Reach", description: "Expanded services to 15+ states" },
+    { year: "2025", title: "Industry Recognition", description: "Got first defence project" },
+    { year: "2026", title: "Innovation Leader", description: "Leading the industry with AI-powered solutions" }
   ];
 
   return (
