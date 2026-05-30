@@ -44,48 +44,5 @@ export const teamMembers: TeamMember[] = [
       linkedin: "https://linkedin.com",
       github: "https://github.com"
     }
-  },
-  {
-    id: "5",
-    name: "Jordan Lee",
-    role: "DevOps Engineer",
-    imageUrl: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces",
-    bio: "Infrastructure wizard ensuring seamless deployments",
-    social: {
-      linkedin: "https://linkedin.com",
-      github: "https://github.com"
-    }
-  },
-  {
-    id: "6",
-    name: "Sofia Martinez",
-    role: "Marketing Director",
-    imageUrl: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&crop=faces",
-    bio: "Digital marketing strategist driving growth",
-    social: {
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com"
-    }
-  },
-  {
-    id: "7",
-    name: "Ryan Foster",
-    role: "Security Specialist",
-    imageUrl: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=400&h=400&fit=crop&crop=faces",
-    bio: "Cyber security expert protecting digital assets",
-    social: {
-      linkedin: "https://linkedin.com"
-    }
-  },
-  {
-    id: "8",
-    name: "Emma Wilson",
-    role: "Product Manager",
-    imageUrl: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&h=400&fit=crop&crop=faces",
-    bio: "Strategic thinker turning ideas into reality",
-    social: {
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com"
-    }
   }
-];
+},
