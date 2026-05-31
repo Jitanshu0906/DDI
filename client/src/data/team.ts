@@ -5,7 +5,7 @@ export const teamMembers: TeamMember[] = [
     id: "1",
     name: "Alex Thompson",
     role: "CEO & Founder",
-    imageUrl: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=faces",
+    imageUrl: "client/public/images",
     bio: "Visionary leader with 15+ years in tech innovation",
     social: {
       linkedin: "https://linkedin.com",
