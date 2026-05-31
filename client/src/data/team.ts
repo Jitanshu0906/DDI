@@ -45,4 +45,4 @@ export const teamMembers: TeamMember[] = [
       github: "https://github.com"
     }
   }
-},
+];
