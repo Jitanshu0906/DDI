@@ -3,7 +3,7 @@ import { TeamMember } from "@shared/schema";
 export const teamMembers: TeamMember[] = [
   {
     id: "1",
-    name: "Alex Thompson",
+    name: "Jitanshu Trivedi",
     role: "CEO & Founder",
     imageUrl: "client/public/images",
     bio: "Visionary leader with 15+ years in tech innovation",
@@ -14,7 +14,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "2",
-    name: "Priya Sharma",
+    name: "Isha Chandel",
     role: "CTO",
     imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces",
     bio: "Tech genius specializing in scalable architecture",
@@ -25,7 +25,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "3",
-    name: "Marcus Johnson",
+    name: "Suraj Yadav",
     role: "Head of Design",
     imageUrl: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop&crop=faces",
     bio: "Award-winning designer crafting pixel-perfect experiences",
@@ -36,7 +36,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "4",
-    name: "Nina Patel",
+    name: "Shani",
     role: "Lead Developer",
     imageUrl: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces",
     bio: "Full-stack expert building robust solutions",
