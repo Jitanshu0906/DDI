@@ -5,7 +5,7 @@ export const teamMembers: TeamMember[] = [
     id: "1",
     name: "Jitanshu Trivedi",
     role: "CEO & Founder",
-    imageUrl: "client/public/images",
+    imageUrl: "client/public/images/Jitanshu.png",
     bio: "Visionary leader with 15+ years in tech innovation",
     social: {
       linkedin: "https://linkedin.com",
