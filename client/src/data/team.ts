@@ -33,7 +33,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "4",
-    name: "Shani",
+    name: "Prakash Parihar",
     role: "Designer",
     imageUrl: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces",
     bio: "Designer creating user-centered, visually compelling digital experiences.",
