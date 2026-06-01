@@ -6,43 +6,39 @@ export const teamMembers: TeamMember[] = [
     name: "Jitanshu Trivedi",
     role: "CEO & Founder",
     imageUrl: "client/public/images/Jitanshu.png",
-    bio: "Visionary leader with 15+ years in tech innovation",
+    bio: "Visionary leader with 5+ years in tech innovation",
     social: {
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com"
+      linkedin: "www.linkedin.com/in/jitanshu-trivedi-920490261",
     }
   },
   {
     id: "2",
     name: "Isha Chandel",
-    role: "CTO",
+    role: "HR",
     imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces",
-    bio: "Tech genius specializing in scalable architecture",
+    bio: "HR professional in tech, building people-first cultures and scaling talent strategies.",
     social: {
-      linkedin: "https://linkedin.com",
-      github: "https://github.com"
+      linkedin: "https://www.linkedin.com/in/isha-chandel-48244b256",
     }
   },
   {
     id: "3",
     name: "Suraj Yadav",
-    role: "Head of Design",
+    role: "Devloper",
     imageUrl: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop&crop=faces",
-    bio: "Award-winning designer crafting pixel-perfect experiences",
+    bio: "Full-stack developer building scalable web applications.",
     social: {
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com"
+      linkedin: "https://www.linkedin.com/in/suraj-yadav-5a90883b1",
     }
   },
   {
     id: "4",
     name: "Shani",
-    role: "Lead Developer",
+    role: "Designer",
     imageUrl: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces",
-    bio: "Full-stack expert building robust solutions",
+    bio: "Designer creating user-centered, visually compelling digital experiences.",
     social: {
-      linkedin: "https://linkedin.com",
-      github: "https://github.com"
+      linkedin: "www.linkedin.com/in/prakash-singh-6b6245377",
     }
   }
 ];
