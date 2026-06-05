@@ -263,7 +263,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             {clientLogos.map((logo, index) => (
               <div 
                 key={index}
