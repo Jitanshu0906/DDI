@@ -263,7 +263,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 place-items-center justify-items-center">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 justify-center">
             {clientLogos.map((logo, index) => (
               <div 
                 key={index}
