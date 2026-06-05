@@ -13,9 +13,9 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "2",
-    name: "Isha Chandel",
+    name: "Shreya Pandey",
     role: "HR",
-    imageUrl: "/images/Isha.png",
+    imageUrl: "/images/Shreya.png",
     bio: "HR professional in tech, building people-first cultures and scaling talent strategies.",
     social: {
       linkedin: "https://www.linkedin.com/in/isha-chandel-48244b256",
