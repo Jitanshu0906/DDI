@@ -9,10 +9,10 @@ import teamHeroImage from "@assets/generated_images/team_collaboration_illustrat
 
 export default function About() {
   const clientLogos = [
-    { name: "TechCorp", url: "https://via.placeholder.com/150x50/1e293b/64748b?text=TechCorp" },
-    { name: "StartupHub", url: "https://via.placeholder.com/150x50/1e293b/64748b?text=StartupHub" },
-    { name: "GlobalTech", url: "https://via.placeholder.com/150x50/1e293b/64748b?text=GlobalTech" },
-    { name: "DigitalWave", url: "https://via.placeholder.com/150x50/1e293b/64748b?text=DigitalWave" }
+    { name: "Grenee", url: "/images/f23d17_eeca30aa997c469fab1a9099dfecfd32~mv2.avif" },
+    { name: "GU", url: "/images/GU.jpg" },
+    { name: "DRDO", url: "/images/DRDO-logo.png" },
+    { name: "Indian Navy", url: "/images/indian-navy-logo-png_seeklogo-555192.png" }
   ];
 
   const timeline = [
