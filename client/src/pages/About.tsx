@@ -12,8 +12,6 @@ export default function About() {
     { name: "TechCorp", url: "https://via.placeholder.com/150x50/1e293b/64748b?text=TechCorp" },
     { name: "StartupHub", url: "https://via.placeholder.com/150x50/1e293b/64748b?text=StartupHub" },
     { name: "GlobalTech", url: "https://via.placeholder.com/150x50/1e293b/64748b?text=GlobalTech" },
-    { name: "InnovateCo", url: "https://via.placeholder.com/150x50/1e293b/64748b?text=InnovateCo" },
-    { name: "FutureSoft", url: "https://via.placeholder.com/150x50/1e293b/64748b?text=FutureSoft" },
     { name: "DigitalWave", url: "https://via.placeholder.com/150x50/1e293b/64748b?text=DigitalWave" }
   ];
 
