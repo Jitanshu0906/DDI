@@ -256,14 +256,14 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-display font-bold text-white mb-4" data-testid="text-clients-heading">
-              Trusted By Leading Brands
+                Trusted By Leading Brands
             </h2>
             <p className="text-xl text-slate-400">
               Partnering with industry leaders worldwide
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 place-items-center justify-items-center">
             {clientLogos.map((logo, index) => (
               <div 
                 key={index}
