@@ -102,7 +102,7 @@ export default function About() {
               Our Journey
             </h2>
             <p className="text-xl text-slate-400">
-              15 years of innovation and growth
+              5 years of innovation and growth
             </p>
           </div>
 
