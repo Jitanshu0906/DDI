@@ -10,6 +10,8 @@ import Home from "@/pages/Home";
 import Services from "@/pages/Services";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
+import Inquiry from "@/pages/Inquiry";
+
 import Blog from "@/pages/Blog";
 import Pricing from "@/pages/Pricing";
 import CaseStudies from "@/pages/CaseStudies";
@@ -29,6 +31,8 @@ function Router() {
           <Route path="/case-studies" component={CaseStudies} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/inquiry" component={Inquiry} />
+
           <Route component={NotFound} />
         </Switch>
       </div>
