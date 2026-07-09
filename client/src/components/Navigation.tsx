@@ -43,11 +43,12 @@ export function Navigation() {
                 </span>
               </Link>
             ))}
-            <Link href="/contact">
+            <Link href="/inquiry">
               <Button className="font-semibold" data-testid="button-nav-cta">
                 Get Started
               </Button>
             </Link>
+
           </div>
 
           {/* Mobile Menu Button */}
@@ -84,7 +85,7 @@ export function Navigation() {
                   </span>
                 </Link>
               ))}
-              <Link href="/contact">
+              <Link href="/inquiry">
                 <Button 
                   className="w-full font-semibold" 
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -93,6 +94,7 @@ export function Navigation() {
                   Get Started
                 </Button>
               </Link>
+
             </div>
           </div>
         )}
