@@ -99,7 +99,7 @@ export default function Home() {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <Link href="/contact">
+                <Link href="/inquiry">
                   <Button 
                     size="lg" 
                     className="group font-semibold"
