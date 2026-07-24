@@ -120,8 +120,8 @@ export default function CaseStudies() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { icon: Users, label: "Happy Clients", value: "500+" },
-              { icon: Target, label: "Projects Delivered", value: "1200+" },
+              { icon: Users, label: "Happy Clients", value: "50+" },
+              { icon: Target, label: "Projects Delivered", value: "120+" },
               { icon: TrendingUp, label: "Average ROI", value: "300%+" },
               { icon: Zap, label: "Success Rate", value: "99%" }
             ].map((stat, index) => (
