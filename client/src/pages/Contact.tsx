@@ -294,7 +294,7 @@ export default function Contact() {
           <GlassCard className="overflow-hidden" data-testid="card-map">
             <div className="aspect-video">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.6395883087866!2d-122.08624908469174!3d37.38605197982991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7495bec0189%3A0x7c17d44a466baf9b!2sSilicon%20Valley!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                src="https://www.google.com/maps/place/Veneziano/@21.1505469,72.7733024,763m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3be04d8a36b354db:0xad7a3a030c453a30!8m2!3d21.1505469!4d72.7758773!16s%2Fg%2F11b7fv4g93?entry=ttu&g_ep=EgoyMDI2MDcyMS4wIKXMDSoASAFQAw%3D%3D"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
