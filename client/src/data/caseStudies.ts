@@ -1,3 +1,4 @@
+import fintechAppImage from "@attached_assets/generated_images/Fintech Mobile Application.png";
 export interface CaseStudy {
   id: string;
   title: string;
@@ -42,7 +43,7 @@ export const caseStudies: CaseStudy[] = [
       "99.99% uptime",
       "Zero security incidents"
     ],
-    imageUrl: "https://images.unsplash.com/photo-1563986768609-322da13e763f?w=800&h=500&fit=crop",
+    imageUrl: "attached_assets/generated_images/Fintech Mobile Application.png",
     technologies: ["Swift", "Kotlin", "Firebase", "OAuth 2.0"],
     year: 2024
   },
