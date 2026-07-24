@@ -20,13 +20,18 @@ jobs:
         run: npm install
       - name: Build the site
         run: npm run build
-      - name: Copy CNAME to dist (preserves your custom domain)
-        run: cp CNAME dist/public/CNAME
-      - name: Copy index.html to 404.html (fixes reload/direct-link 404s)
-        run: cp dist/public/index.html dist/public/404.html
+      - name: Show dist folder structure (debug)
+        run: find dist -maxdepth 3
+      - name: Detect output folder, add CNAME and 404.html
+        run: |
+          OUTDIR=$(dirname "$(find dist -name index.html | head -n 1)")
+          echo "Detected build output folder: $OUTDIR"
+          cp CNAME "$OUTDIR/CNAME"
+          cp "$OUTDIR/index.html" "$OUTDIR/404.html"
+          echo "OUTDIR=$OUTDIR" >> "$GITHUB_ENV"
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/public
+          publish_dir: ${{ env.OUTDIR }}
           publish_branch: gh-pages
