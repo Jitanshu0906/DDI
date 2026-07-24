@@ -1,4 +1,4 @@
-import fintechAppImage from "@attached_assets/generated_images/Fintech Mobile Application.png";
+import fintechAppImage from "@assets/generated_images/Fintech Mobile Application.png";
 export interface CaseStudy {
   id: string;
   title: string;
@@ -43,7 +43,7 @@ export const caseStudies: CaseStudy[] = [
       "99.99% uptime",
       "Zero security incidents"
     ],
-    imageUrl: "attached_assets/generated_images/Fintech Mobile Application.png",
+    imageUrl: fintechAppImage,
     technologies: ["Swift", "Kotlin", "Firebase", "OAuth 2.0"],
     year: 2024
   },
