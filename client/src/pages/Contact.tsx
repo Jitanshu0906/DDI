@@ -224,8 +224,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-white mb-1">Email</h4>
-                      <a href="mailto:info@techsolutions.com" className="text-slate-400 hover:text-primary transition-colors" data-testid="link-contact-email">
-                        info@techsolutions.com
+                      <a href="mailto:contact@digitaldreamit.in" className="text-slate-400 hover:text-primary transition-colors" data-testid="link-contact-email">
+                        contact@digitaldreamsit.in
                       </a>
                     </div>
                   </div>
@@ -236,22 +236,9 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-white mb-1">Phone</h4>
-                      <a href="tel:+1234567890" className="text-slate-400 hover:text-primary transition-colors" data-testid="link-contact-phone">
-                        +1 (234) 567-890
+                      <a href="tel:+916355816866" className="text-slate-400 hover:text-primary transition-colors" data-testid="link-contact-phone">
+                        +91 (635) 581-6866
                       </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-white mb-1">Office</h4>
-                      <p className="text-slate-400">
-                        123 Tech Street, Silicon Valley<br />
-                        CA 94025, United States
-                      </p>
                     </div>
                   </div>
 
@@ -263,7 +250,7 @@ export default function Contact() {
                       <h4 className="font-semibold text-white mb-1">Office Hours</h4>
                       <p className="text-slate-400">
                         Monday - Friday: 9:00 AM - 6:00 PM<br />
-                        Saturday: 10:00 AM - 4:00 PM<br />
+                        Saturday: Closed<br />
                         Sunday: Closed
                       </p>
                     </div>
