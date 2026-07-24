@@ -12,7 +12,6 @@ export function Navigation() {
     { href: "/services", label: "Services" },
     { href: "/pricing", label: "Pricing" },
     { href: "/case-studies", label: "Cases" },
-    { href: "/blog", label: "Blog" },
     { href: "/about", label: "About" }
   ];
 
