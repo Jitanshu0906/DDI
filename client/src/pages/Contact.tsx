@@ -11,7 +11,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Mail, Phone, Clock, Shield, Award, Users } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Shield, Award, Users } from "lucide-react";
 import { faqItems } from "@/data/faq";
 import contactHeroImage from "@assets/generated_images/communication_network_visualization.png";
 import { useForm } from "react-hook-form";
@@ -46,23 +46,29 @@ export default function Contact() {
     }
   });
 
+  const mutation = useMutation({
+    mutationFn: async (data: ContactFormData) => {
+      return apiRequest("POST", "/api/contact", data);
+    },
+    onSuccess: () => {
+      setIsSubmitted(true);
+      form.reset();
+      toast({
+        title: "Message Sent Successfully!",
+        description: "We'll get back to you within 24 hours.",
+      });
+    },
+    onError: () => {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive"
+      });
+    }
+  });
+
   const onSubmit = (data: ContactFormData) => {
-    // Create mailto link with form data
-    const subject = encodeURIComponent("Contact Form Submission from Website");
-    const body = encodeURIComponent(
-      `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || 'Not provided'}\n\nMessage:\n${data.message}`
-    );
-    const mailtoLink = `mailto:contact@digitaldreamsit.in?subject=${subject}&body=${body}`;
-
-    // Open email client
-    window.location.href = mailtoLink;
-
-    setIsSubmitted(true);
-    form.reset();
-    toast({
-      title: "Email Client Opened!",
-      description: "Your email client has been opened with the message. Please send it to complete your inquiry.",
-    });
+    mutation.mutate(data);
   };
 
   return (
@@ -70,14 +76,14 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src={contactHeroImage}
+          <img 
+            src={contactHeroImage} 
             alt="Communication visualization"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-900/90 to-slate-950" />
         </div>
-
+        
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -113,11 +119,11 @@ export default function Contact() {
                       <FormItem>
                         <FormLabel className="text-white">Name *</FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="Your full name"
+                          <Input 
+                            placeholder="Your full name" 
                             className="bg-white/5 border-white/10 text-white placeholder:text-slate-500"
                             data-testid="input-name"
-                            {...field}
+                            {...field} 
                           />
                         </FormControl>
                         <FormMessage />
@@ -132,12 +138,12 @@ export default function Contact() {
                       <FormItem>
                         <FormLabel className="text-white">Email *</FormLabel>
                         <FormControl>
-                          <Input
+                          <Input 
                             type="email"
-                            placeholder="your@email.com"
+                            placeholder="your@email.com" 
                             className="bg-white/5 border-white/10 text-white placeholder:text-slate-500"
                             data-testid="input-email"
-                            {...field}
+                            {...field} 
                           />
                         </FormControl>
                         <FormMessage />
@@ -152,12 +158,12 @@ export default function Contact() {
                       <FormItem>
                         <FormLabel className="text-white">Phone (Optional)</FormLabel>
                         <FormControl>
-                          <Input
+                          <Input 
                             type="tel"
-                            placeholder="+1 (234) 567-890"
+                            placeholder="+1 (234) 567-890" 
                             className="bg-white/5 border-white/10 text-white placeholder:text-slate-500"
                             data-testid="input-phone"
-                            {...field}
+                            {...field} 
                           />
                         </FormControl>
                         <FormMessage />
@@ -172,12 +178,12 @@ export default function Contact() {
                       <FormItem>
                         <FormLabel className="text-white">Message *</FormLabel>
                         <FormControl>
-                          <Textarea
+                          <Textarea 
                             placeholder="Tell us about your project..."
                             rows={6}
                             className="bg-white/5 border-white/10 text-white placeholder:text-slate-500 resize-none"
                             data-testid="input-message"
-                            {...field}
+                            {...field} 
                           />
                         </FormControl>
                         <FormMessage />
@@ -185,9 +191,9 @@ export default function Contact() {
                     )}
                   />
 
-                  <Button
-                    type="submit"
-                    size="lg"
+                  <Button 
+                    type="submit" 
+                    size="lg" 
                     className="w-full font-semibold"
                     disabled={mutation.isPending}
                     data-testid="button-submit-contact"
@@ -210,7 +216,7 @@ export default function Contact() {
             <div className="space-y-8">
               <GlassCard className="p-8" data-testid="card-contact-info">
                 <h3 className="text-2xl font-display font-bold text-white mb-6">Contact Information</h3>
-
+                
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
@@ -218,8 +224,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-white mb-1">Email</h4>
-                      <a href="mailto:contact@digitaldreamsit.in" className="text-slate-400 hover:text-primary transition-colors" data-testid="link-contact-email">
-                        contact@digitaldreamsit.in
+                      <a href="mailto:info@techsolutions.com" className="text-slate-400 hover:text-primary transition-colors" data-testid="link-contact-email">
+                        info@techsolutions.com
                       </a>
                     </div>
                   </div>
@@ -230,9 +236,22 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-white mb-1">Phone</h4>
-                      <a href="tel:+916355816866" className="text-slate-400 hover:text-primary transition-colors" data-testid="link-contact-phone">
-                        +91 6355 816 866
+                      <a href="tel:+1234567890" className="text-slate-400 hover:text-primary transition-colors" data-testid="link-contact-phone">
+                        +1 (234) 567-890
                       </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center">
+                      <MapPin className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white mb-1">Office</h4>
+                      <p className="text-slate-400">
+                        123 Tech Street, Silicon Valley<br />
+                        CA 94025, United States
+                      </p>
                     </div>
                   </div>
 
@@ -255,7 +274,7 @@ export default function Contact() {
               {/* Trust Badges */}
               <GlassCard className="p-8" data-testid="card-trust-badges">
                 <h3 className="text-2xl font-display font-bold text-white mb-6">Why Trust Us</h3>
-
+                
                 <div className="grid grid-cols-3 gap-4">
                   <div className="text-center">
                     <div className="w-12 h-12 mx-auto mb-3 rounded-lg bg-primary/20 flex items-center justify-center">
@@ -282,7 +301,26 @@ export default function Contact() {
         </div>
       </section>
 
-
+      {/* Map Section */}
+      <section className="py-12 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <GlassCard className="overflow-hidden" data-testid="card-map">
+            <div className="aspect-video">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.6395883087866!2d-122.08624908469174!3d37.38605197982991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7495bec0189%3A0x7c17d44a466baf9b!2sSilicon%20Valley!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Office Location"
+                data-testid="iframe-map"
+              />
+            </div>
+          </GlassCard>
+        </div>
+      </section>
 
       {/* FAQ Section */}
       <section className="py-24 relative">
