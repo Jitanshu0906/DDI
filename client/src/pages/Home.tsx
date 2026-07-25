@@ -227,14 +227,14 @@ export default function Home() {
               <GlassCard className="p-6 text-center">
                 <Users className="w-12 h-12 text-primary mx-auto mb-4" />
                 <div className="text-3xl font-display font-bold text-white mb-2" data-testid="text-achievement-team">
-                  <Counter end={50} suffix="+" />
+                  <Counter end={5} suffix="+" />
                 </div>
                 <div className="text-slate-400">Expert Team Members</div>
               </GlassCard>
               <GlassCard className="p-6 text-center">
                 <Award className="w-12 h-12 text-primary mx-auto mb-4" />
                 <div className="text-3xl font-display font-bold text-white mb-2" data-testid="text-achievement-awards">
-                  <Counter end={25} suffix="+" />
+                  <Counter end={2} suffix="+" />
                 </div>
                 <div className="text-slate-400">Industry Awards</div>
               </GlassCard>
