@@ -11,7 +11,7 @@ import { teamMembers } from "@/data/team";
 // ---------------------------------------------------------------------------
 const CONTACT_EMAIL = "contact@digitaldreamsit.in";
 const CONTACT_PHONE = "+91 6355816866";
-const BUSINESS_HOURS = "Monday to Saturday, 9:00 AM - 6:00 PM IST";
+const BUSINESS_HOURS = "Monday to Friday, 9:00 AM - 6:00 PM IST";
 
 interface Message {
   id: number;
