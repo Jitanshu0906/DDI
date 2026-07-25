@@ -19,10 +19,12 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { insertContactSubmissionSchema } from "@shared/schema";
 import { z } from "zod";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+
+// The WhatsApp number that receives contact form submissions.
+// Must be in international format with no "+", spaces, or dashes.
+const WHATSAPP_NUMBER = "916355816866";
 
 const contactFormSchema = insertContactSubmissionSchema.extend({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -46,29 +48,26 @@ export default function Contact() {
     }
   });
 
-  const mutation = useMutation({
-    mutationFn: async (data: ContactFormData) => {
-      return apiRequest("POST", "/api/contact", data);
-    },
-    onSuccess: () => {
-      setIsSubmitted(true);
-      form.reset();
-      toast({
-        title: "Message Sent Successfully!",
-        description: "We'll get back to you within 24 hours.",
-      });
-    },
-    onError: () => {
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive"
-      });
-    }
-  });
+const onSubmit = (data: ContactFormData) => {
+    const messageLines = [
+      "New website inquiry:",
+      `Name: ${data.name}`,
+      `Email: ${data.email}`,
+      data.phone ? `Phone: ${data.phone}` : null,
+      `Message: ${data.message}`
+    ].filter(Boolean);
 
-  const onSubmit = (data: ContactFormData) => {
-    mutation.mutate(data);
+    const whatsappText = encodeURIComponent(messageLines.join("\n"));
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappText}`;
+
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+
+    setIsSubmitted(true);
+    form.reset();
+    toast({
+      title: "Opening WhatsApp...",
+      description: "Just hit send in WhatsApp to complete your message to us.",
+    });
   };
 
   return (
@@ -195,10 +194,9 @@ export default function Contact() {
                     type="submit" 
                     size="lg" 
                     className="w-full font-semibold"
-                    disabled={mutation.isPending}
                     data-testid="button-submit-contact"
                   >
-                    {mutation.isPending ? "Sending..." : "Send Message"}
+                    Send Message
                   </Button>
                 </form>
               </Form>
@@ -206,7 +204,7 @@ export default function Contact() {
               {isSubmitted && (
                 <div className="mt-6 p-4 rounded-lg bg-green-500/10 border border-green-500/20">
                   <p className="text-green-400 text-center font-medium">
-                    Thank you! Your message has been sent successfully.
+                    A WhatsApp chat has opened with your message pre-filled — just hit send to reach us!
                   </p>
                 </div>
               )}
