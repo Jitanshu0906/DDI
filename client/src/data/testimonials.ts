@@ -4,7 +4,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "1",
     name: "Sarah Johnson",
-    company: "TechStart Inc.",
+    company: "DataInsights",
     role: "CEO",
     content: "Working with this team transformed our digital presence. The website they built is not only beautiful but also drives real results. Our conversion rate increased by 150%!",
     rating: 5,
@@ -13,7 +13,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "2",
     name: "Michael Chen",
-    company: "FinanceFlow",
+    company: "PayFlow",
     role: "CTO",
     content: "The custom software solution they developed streamlined our entire operation. Their technical expertise and attention to detail are unmatched. Highly recommended!",
     rating: 5,
@@ -22,7 +22,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "3",
     name: "Emily Rodriguez",
-    company: "StyleHub",
+    company: "RetailHub",
     role: "Founder",
     content: "The mobile app they created for us is exactly what we envisioned. The UI is intuitive, the performance is stellar, and our users love it. Worth every penny!",
     rating: 5,
