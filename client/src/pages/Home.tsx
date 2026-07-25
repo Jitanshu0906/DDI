@@ -125,19 +125,19 @@ export default function Home() {
               <div className="grid grid-cols-3 gap-6 pt-8">
                 <div>
                   <div className="text-3xl font-display font-bold text-primary" data-testid="text-stat-clients">
-                    <Counter end={500} suffix="+" />
+                    <Counter end={50} suffix="+" />
                   </div>
                   <div className="text-sm text-slate-400">Happy Clients</div>
                 </div>
                 <div>
                   <div className="text-3xl font-display font-bold text-primary" data-testid="text-stat-projects">
-                    <Counter end={1200} suffix="+" />
+                    <Counter end={120} suffix="+" />
                   </div>
                   <div className="text-sm text-slate-400">Projects Completed</div>
                 </div>
                 <div>
                   <div className="text-3xl font-display font-bold text-primary" data-testid="text-stat-years">
-                    <Counter end={15} suffix="+" />
+                    <Counter end={5} suffix="+" />
                   </div>
                   <div className="text-sm text-slate-400">Years Experience</div>
                 </div>
