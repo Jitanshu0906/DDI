@@ -21,7 +21,7 @@ export const pricingServices: PricingService[] = [
     tiers: [
       {
         name: "Starter",
-        basePrice: 2500,
+        basePrice: 310,
         description: "Perfect for small businesses",
         features: [
           "5-10 pages",
@@ -33,7 +33,7 @@ export const pricingServices: PricingService[] = [
       },
       {
         name: "Professional",
-        basePrice: 5000,
+        basePrice: 1035,
         description: "For growing businesses",
         features: [
           "15-20 pages",
@@ -47,7 +47,7 @@ export const pricingServices: PricingService[] = [
       },
       {
         name: "Enterprise",
-        basePrice: 10000,
+        basePrice: 6215,
         description: "Custom solutions",
         features: [
           "Unlimited pages",
@@ -67,7 +67,7 @@ export const pricingServices: PricingService[] = [
     tiers: [
       {
         name: "MVP",
-        basePrice: 15000,
+        basePrice: 3625,
         description: "Launch quickly",
         features: [
           "Single platform (iOS or Android)",
@@ -78,7 +78,7 @@ export const pricingServices: PricingService[] = [
       },
       {
         name: "Standard",
-        basePrice: 35000,
+        basePrice: 12430,
         description: "Full-featured app",
         features: [
           "iOS & Android",
@@ -92,7 +92,7 @@ export const pricingServices: PricingService[] = [
       },
       {
         name: "Premium",
-        basePrice: 75000,
+        basePrice: 35210,
         description: "Full enterprise solution",
         features: [
           "iOS, Android, & Web",
@@ -113,7 +113,7 @@ export const pricingServices: PricingService[] = [
     tiers: [
       {
         name: "Small Project",
-        basePrice: 20000,
+        basePrice: 5180,
         description: "Limited scope",
         features: [
           "Up to 200 hours",
@@ -124,7 +124,7 @@ export const pricingServices: PricingService[] = [
       },
       {
         name: "Medium Project",
-        basePrice: 50000,
+        basePrice: 16570,
         description: "Extended scope",
         features: [
           "Up to 600 hours",
@@ -137,7 +137,7 @@ export const pricingServices: PricingService[] = [
       },
       {
         name: "Large Project",
-        basePrice: 150000,
+        basePrice: 67320,
         description: "Enterprise systems",
         features: [
           "Unlimited hours",
@@ -157,7 +157,7 @@ export const pricingServices: PricingService[] = [
     tiers: [
       {
         name: "Starter Package",
-        basePrice: 1000,
+        basePrice: 125,
         description: "Basic design services",
         features: [
           "Logo design",
@@ -168,7 +168,7 @@ export const pricingServices: PricingService[] = [
       },
       {
         name: "Brand Package",
-        basePrice: 3000,
+        basePrice: 520,
         description: "Complete brand identity",
         features: [
           "Logo & variations",
@@ -181,7 +181,7 @@ export const pricingServices: PricingService[] = [
       },
       {
         name: "Enterprise Package",
-        basePrice: 8000,
+        basePrice: 2280,
         description: "Full branding solution",
         features: [
           "Complete brand identity",
