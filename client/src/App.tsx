@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Navigation } from "@/components/Navigation";
-import { LiveChat } from "@/components/LiveChat";
+import { ChatBot } from "@/components/ChatBot";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import Home from "@/pages/Home";
 import Services from "@/pages/Services";
@@ -20,7 +20,7 @@ function Router() {
     <>
       <ScrollToTop />
       <Navigation />
-      <LiveChat />
+      <ChatBot />
       <div className="pt-20">
         <Switch>
           <Route path="/" component={Home} />
