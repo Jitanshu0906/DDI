@@ -8,7 +8,7 @@ export const teamMembers: TeamMember[] = [
     imageUrl: "/images/Jitanshu.png",
     bio: "Visionary leader with 5+ years in tech innovation",
     social: {
-      linkedin: "www.linkedin.com/in/jitanshu-trivedi-920490261",
+      linkedin: "https://www.linkedin.com/in/jitanshu-trivedi-920490261",
     }
   },
   {
