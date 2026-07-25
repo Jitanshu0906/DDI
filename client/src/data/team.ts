@@ -8,7 +8,7 @@ export const teamMembers: TeamMember[] = [
     imageUrl: "/images/Jitanshu.png",
     bio: "Visionary leader with 5+ years in tech innovation",
     social: {
-      linkedin: "https://www.linkedin.com/in/jitanshu-trivedi-920490261",
+      linkedin: "https://www.linkedin.com/in/jitanshu-trivedi-920490261/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BU3lTtaCGRrGPp%2FwNbAUvRA%3D%3D",
     }
   },
   {
@@ -38,7 +38,7 @@ export const teamMembers: TeamMember[] = [
     imageUrl: "/images/Shani.png",
     bio: "Designer creating user-centered, visually compelling digital experiences.",
     social: {
-      linkedin: "www.linkedin.com/in/prakash-singh-6b6245377",
+      linkedin: "https://www.linkedin.com/in/prakash-singh-6b6245377/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUagam0a4TdqjQwLlsJLipA%3D%3D",
     }
   }
 ];
