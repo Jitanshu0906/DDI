@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Navigation } from "@/components/Navigation";
 import { LiveChat } from "@/components/LiveChat";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import Home from "@/pages/Home";
 import Services from "@/pages/Services";
 import About from "@/pages/About";
@@ -17,6 +18,7 @@ import NotFound from "@/pages/not-found";
 function Router() {
   return (
     <>
+      <ScrollToTop />
       <Navigation />
       <LiveChat />
       <div className="pt-20">
@@ -27,7 +29,6 @@ function Router() {
           <Route path="/case-studies" component={CaseStudies} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
-
           <Route component={NotFound} />
         </Switch>
       </div>
