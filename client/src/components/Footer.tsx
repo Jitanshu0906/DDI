@@ -18,7 +18,7 @@ export function Footer() {
             </p>
             <div className="flex gap-3">
               <a 
-                href="https://facebook.com" 
+                href="https://www.facebook.com/share/1EbbDsVEQw/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-white/5 hover-elevate active-elevate-2 border border-white/10"
@@ -28,7 +28,7 @@ export function Footer() {
                 <Facebook className="w-5 h-5" />
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://x.com/DigitalDreorn9" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-white/5 hover-elevate active-elevate-2 border border-white/10"
@@ -38,7 +38,7 @@ export function Footer() {
                 <Twitter className="w-5 h-5" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/digital-dreams-it-3a40b1426?utm_source=share_via&utm_content=profile&utm_medium=member_android" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-white/5 hover-elevate active-elevate-2 border border-white/10"
@@ -48,7 +48,7 @@ export function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/digitaldreamsit?igsh=MWtwY3lhZGgydmR5Mw==" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-white/5 hover-elevate active-elevate-2 border border-white/10"
