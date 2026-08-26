@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { Navigation } from "@/components/Navigation";
 import { ChatBot } from "@/components/ChatBot";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { PixelTracker } from "@/components/PixelTracker";
 import Home from "@/pages/Home";
 import Services from "@/pages/Services";
 import About from "@/pages/About";
@@ -19,6 +20,7 @@ function Router() {
   return (
     <>
       <ScrollToTop />
+      <PixelTracker />
       <Navigation />
       <ChatBot />
       <div className="pt-20">
